@@ -62,3 +62,7 @@ def evaluate():
 if __name__ == "__main__":
     train(num_epochs=3)
     evaluate()
+
+
+torch.save(model.state_dict(), "model.pth")
+print("Model saved as model.pth")
